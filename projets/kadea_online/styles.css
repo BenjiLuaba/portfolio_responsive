@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    margin: 0;
+}
+/* le header */
+header {
+    padding: 5px 70px;
+    background-color: #202020;
+
+}
+.nav-bar {
+    /* margin: 0;
+    padding: 0; */
+    display: flex;
+    padding: 15px;
+    margin:35px,
+    align-items: center;
+    justify-content: space-between;
+}
+nav a div img {
+    width: 150px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+}
+ul {
+    width: 55%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    list-style: none;
+    font-weight: 600;
+    padding: 8px;
+}
+.list-element > a {
+    text-decoration: none;
+    color:#fff;
+    margin: 0px;
+    padding: 15px 25px;
+}
+.list-element > a:hover {
+    color: #e30613;
+}
+#button-connexion {
+    background-color: #e30613;;
+    border: 2px solid #e30613;
+    border-radius: 20px;
+    color:#fff;
+}
+#button-connexion:hover {
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: #202020;
+    cursor: pointer;
+}
+/* le contenue principal */
+.partie_01 {
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjUwIiBoZWlnaHQ9IjM4OSIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDE2NTAgMzg5Ij48cGF0aCBzdHJva2U9IiM0QTQ1NDUiIGQ9Ik0xNTU3LjI1IDY0LjA0N2MtMTI0LjEgNDAuMDM3LTI1Mi4yMi0yNS41NzMtMzc2LjA2LTg5LjA2Ny03Ny42OS0zOS44MzctMTY1Ljc0LTg0Ljk4LTIyMy45NzEtODUuMTgzLTguNDIyLS4wMzEtMTkuOTE3Ljc3NC0zNC4xNTEgNy4yODktNjQuNjI0IDI5LjU2OCAxMDIuMTMyIDE1Ny4zMyAyMTIuNDgyIDI0MS44NzYgMTM4LjA1IDEwNS43NSAyMjEuNDkgMTcyLjcxOSAxOTguNzkgMjE1LjE2My02LjQ2IDEyLjA2OC0yMS4zNyAyMS43OTUtNDMuMTEgMjguMTItMTAzLjE3IDI5Ljk2NC0yNTUuNjgtNTEuNzgtNTM4Ljg2My0yMTEuMTcyLTEyMS43NjQtNjguNTMtMjQ3LjY2My0xMzkuMzk1LTM1OC4xNjYtMTg5LjIxOC0xNTEuMzQ4LTY4LjI0My0yMDYuNzI5LTY2LjAxOS0yMjMuNDc5LTYxLjk1NC03OC4wNDIgMTkuMTA5LTQ5LjYyNyA3MS45MyAyLjY1MiAxNTAuMzMzIDQ4LjczMSA3My4wODYgMTAzLjk0NCAxNTUuOTMtNDUuOTQxIDE4NC4xMTYtMjU2LjUzNyA0OC4yNTQtNDU2Ljk2Mi0xMjUuMTU4LTQ2NS4zODgtMTMyLjU1OS0xMS4xMi05LjgwNC0zLjI3Ni0yMi40NDIgMTcuNTQ5LTI4LjIzMyAyMC44NDMtNS43ODQgNDYuNzMxLTIuNTM0IDU3Ljg2NyA3LjI2OSAxLjcxOCAxLjUwNiAxNzYuNjA4IDE1MC4wMzEgMzYxLjg4MiAxMTUuMjA3IDY2LjU1Ny0xMi41MjQgNDEuNTc2LTU4LjEwNS03LjQ4LTEzMS42OTNDNDAuNjU3IDcuNTUtMTcuMzY2LTc5LjQ4NyAxMzQuNjI0LTExNi42ODRjMTAuODMtMi42NTIgMjIuMDAzLTQuNDgxIDMzLjU4OS01LjUxOCAxNDIuNTkyLTEyLjczNyAzNDUuNDcxIDk0LjI1NSA2NTAuMDk2IDI2NS43MDMgMTAxLjA3NCA1Ni44OTEgMTk2LjU1IDExMC42MjUgMjc3Ljg2IDE0OS40NzYgMTE3LjAxIDU1LjkwNSAxNTAuODIgNTQuMzQxIDE1My4yIDU0LjIxMiAxLjA1LS4zMDggMS41Mi0uNDQzIDIuMjItMS43NTEgMTQuNy0yNy40NjItOTguMjEtMTEzLjk2OS0xODguOTUtMTgzLjQ3NkM5MDEuMTE3IDM4LjIxMiA3NDguNTQ4LTc4LjY3NCA4NjUuNTkyLTEzMi4yM2MyOC4xMTYtMTIuODY4IDYwLjM5LTE5LjI5OCA5NS44NjgtMTkuMTk2IDkzLjY2LjMyMyAxODUuNzIgNDcuNTIyIDI4My4xOCA5Ny40ODggOTUuNTMgNDguOTc5IDIwMy45NyAxMDQuNDc0IDI2Ny4xNSA4NC4wMjggMjguOTgtOS4zNDggNDUuMzUtMjEuMDggNTAuMDYtMzUuODY3IDE0LjU0LTQ1LjY1Ny04MC44Ny0xMDkuNTczLTExOC44OS0xMzAuMzUzLTE1LjI2LTguMzUtMTMuMDctMjEuMzg5IDQuODktMjkuMTIyIDE3Ljk5LTcuNzE4IDQ0Ljk2LTcuMjQ4IDYwLjIzIDEuMTAxIDYuNjIgMy41OTcgMTYxLjY2IDg5LjA5NiAxMzguMjkgMTYyLjg1MS04LjQ2IDI2LjY1OC0zOS4yNyA0OS4yNTktODkuMTIgNjUuMzQ3WiIgY2xpcC1ydWxlPSJldmVub2RkIiBvcGFjaXR5PSIuMzYiLz48L3N2Zz4=);
+    background-color: #202020;
+    min-height: 680px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: #fff;
+}
+.espace-container {
+    margin: 0 70px;
+    padding: 50px 0;
+    height: 100%;
+}
+.sous_partie_01 {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.sous_partie_01 > div > h1 {
+    margin-bottom: 5px;
+}
+strong {
+    color: red;
+}
+.sous_partie_01 > div > p {
+    padding: 5px 0;
+    margin: 15px 0;
+}
+.sous_partie_01 > div > a {
+    margin: 0px;
+    padding: 15px 25px;
+    background-color: #e30613;;
+    border: 2px solid #e30613;
+    border-radius: 20px;
+    color:#fff;
+    text-decoration: none;
+}
+.sous_partie_01 > div > a:hover {
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: #202020;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'enquête</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Formulaire d'enquête</h1>
+        <p id="description">Remplissez le formulaire ci-dessous:</p>
+        
+        <form id="survey-form">
+            <!-- Name Field -->
+            <label id="name-label" for="name">Nom:</label>
+            <input id="name" type="text" placeholder="Entrez votre nom" required>
+
+            <!-- Email Field -->
+            <label id="email-label" for="email">E-mail:</label>
+            <input id="email" type="email" placeholder="Entrez votre email" required>
+
+            <!-- Number Field -->
+            <label id="number-label" for="number">Âge:</label>
+            <input id="number" type="number" placeholder="Entrez votre âge" min="1" max="120" required>
+
+            <!-- Dropdown Field -->
+            <label for="dropdown">Quelle option décrit le mieux votre rôle actuel ?</label>
+            <select id="dropdown" required>
+                <option value="">Choisir une option</option>
+                <option value="student">Etudiant</option>
+                <option value="full-time-job">Travailleur à temps plein</option>
+                <option value="full-time-learner">Apprenant à temps plein</option>
+                <option value="prefer-not-to-say">Je préfère ne pas le dire</option>
+                <option value="other">Autre</option>
+            </select>
+
+            <!-- Radio Buttons -->
+            <fieldset>
+                <legend>Recommanderiez-vous cette enquête à un ami ?</legend>
+                <label><input type="radio" name="recommend" value="definitely" required> Certainement</label>
+                <label><input type="radio" name="recommend" value="maybe"> Peut être</label>
+                <label><input type="radio" name="recommend" value="not-sure"> Pas certain</label>
+            </fieldset>
+
+            <!-- Checkboxes -->
+            <fieldset>
+                <legend>Qu'aimeriez-vous voir amélioré ? (Cochez toutes les réponses qui s'appliquent)</legend>
+                <label><input type="checkbox" name="improvements" value="front-end-projects"> Projets front-end </label>
+                <label><input type="checkbox" name="improvements" value="back-end-projects"> Projets back-end</label>
+                <label><input type="checkbox" name="improvements" value="data-visualization"> Visualisation de données</label>
+                <label><input type="checkbox" name="improvements" value="challenges"> Défis</label>
+                <label><input type="checkbox" name="improvements" value="forum"> Forum</label>
+                <label><input type="checkbox" name="improvements" value="additional-courses"> Des cours supplémentaires</label>
+            </fieldset>
+
+            <!-- Textarea -->
+            <label for="comments">Des commentaires ou des suggestions ?</label>
+            <textarea id="comments" name="comments" placeholder="Entrez vos commentaires ici"></textarea>
+
+            <!-- Submit Button -->
+            <button id="submit" type="submit">Envoyer</button>
+        </form>
+    </div>
+</body>
+</html>
